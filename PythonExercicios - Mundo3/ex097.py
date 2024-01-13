@@ -5,6 +5,3 @@ def escreva(txt):
 
 
 escreva('Manoel')
-escreva('Magrão 69')
-escreva('DOOM Minecraft Fortnite')
-escreva('Ahn?')
