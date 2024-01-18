@@ -1,3 +1,3 @@
-from ex111.utilidadescev import moeda
-p = float(input('Digite o preço: R$'))
+from utilidadescev import moeda, dado
+p = dado.leiaDinheiro('Digite o preço: R$')
 moeda.resumo(p, 10, 10)
