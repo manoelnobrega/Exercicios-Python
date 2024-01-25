@@ -24,8 +24,8 @@ def menu(msg):
                 print(f'{cores["vermelho"]}ERRO! digite um número inteiro válido!{cores["fechar"]}')
                 continue
             else:
+                arq = 'cadastros.txt'
                 if opc == 1:
-                    arq = 'cadastros.txt'
                     if not verificarTxt(arq):
                         criarTxt(arq)
                     sleep(1)
@@ -38,8 +38,9 @@ def menu(msg):
                 elif opc == 2:
                     sleep(1)
                     print('-'*30)
-                    print(f'{"Opção 2":^28}')
+                    print(f'{"NOVO CADASTRO":^28}')
                     print('-'*30)
+                    escreverTxt('Nome: ', 'Idade: ', arq)
                     sleep(1)
                     break
                 elif opc == 3:

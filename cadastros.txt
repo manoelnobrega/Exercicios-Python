@@ -1,3 +1,4 @@
-Manoel;21
-Lucas;16
-Mateus;27
+Manoel
+21
+Lucas
+16
