@@ -24,9 +24,9 @@ def lerTxt(path):
     except:
         print('\033[0;31mERRO ao ler o arquivo\033[m')
     else:
-        p = a.read()
-        for linha in p:
-            print(f'{p[linha]} - {p[linha+1]}')
+        txt = list(a.read())
+        for i, dado in enumerate(txt):
+            print(f'{txt[i]} /// {txt[i+1]}')
 
 
 def escreverTxt(name, age, path):
@@ -37,7 +37,6 @@ def escreverTxt(name, age, path):
         print('\033[0;31mERRO! Digite um nome e/ou idade válido(s)')
     else:
         a = open(path, 'a')
-        a.write(nome + '\n')
-        a.write(str(idade) + '\n')
+        a.writelines(nome, idade)
         a.close()
         print(f'Novo registro de {nome} adicionado.')
