@@ -1,6 +1,4 @@
-Manoel
-21
-Lucas
-16
-Mateus
-26
+90;90
+Lucas;26
+90;21
+612;21

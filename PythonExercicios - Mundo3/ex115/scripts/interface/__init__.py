@@ -7,8 +7,12 @@ def menu(msg):
         'amarelo': '\033[0;33m',
         'azul': '\033[0;34m',
         'vermelho': '\033[0;31m',
-        'fechar': '\033[m'}
+        'fechar': '\033[m'
+        }
     while True:
+        arq = 'cadastros.txt'
+        if not verificarTxt(arq):
+            criarTxt(arq)
         print('-'*30)
         print(f'{cores["verde"]}{"Menu Principal":^28}{cores["fechar"]}')
         print('-'*30)
@@ -24,10 +28,7 @@ def menu(msg):
                 print(f'{cores["vermelho"]}ERRO! digite um número inteiro válido!{cores["fechar"]}')
                 continue
             else:
-                arq = 'cadastros.txt'
                 if opc == 1:
-                    if not verificarTxt(arq):
-                        criarTxt(arq)
                     sleep(1)
                     print('-'*30)
                     print(f'{"PESSOAS CADASTRADAS":^28}')
