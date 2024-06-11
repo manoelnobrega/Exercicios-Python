@@ -1,0 +1,18 @@
+
+
+
+
+int: Corresponde aos números Inteiros (Z)
+
+
+float: Corresponde aos números Reais (R)
+
+
+bool: Corresponde aos números booleanos (True / False)
+
+
+str: Corresponde à linguagem
+
+______________________________________________________________________________________________________________________________________________________________________
+
+print('Olá {} !'.format(Mundo))

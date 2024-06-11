@@ -1,0 +1,19 @@
+Condições Aninhadas:
+
+elif     -------->      ' else + if '
+
+________________________________________________________
+
+
+
+if ___:
+
+bloco1
+
+elif ___:
+                                                              >>> Estrutura Condicional Aninhada
+bloco2
+
+else:
+                                                             
+bloco3

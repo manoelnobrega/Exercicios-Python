@@ -1,0 +1,57 @@
+Funções
+
+Exemplos:
+print()
+len()
+input()
+int()
+float()
+_________________________________________________________________________________________________________
+
+Definindo Funções
+
+def: Cria funções personalizadas que podem vir junto de parâmetros
+
+Exemplos:
+_______________________________
+
+def lin():
+	print('---------------------')
+
+
+# Programa Principal:
+lin()
+print(' CURSO EM VÍDEO ')
+lin()
+_______________________________
+
+def titulo(txt):
+	print('-' * 30)
+	print(txt)
+	print('-' * 30)
+
+
+# Programa principal:
+titulo('Curso em Vídeo')
+
+______________________________
+
+def contador(*num):
+	tam = len(num)
+    	print(f'Recebi os valores {num} e são ao todo {tam} números')
+
+
+contador(5, 7, 3, 1, 4)
+contador(8, 4, 7)
+______________________________
+
+def dobra(lst):
+	pos = 0
+	while pos < len(lst):
+		lst[pos] *= 2
+		pos += 1
+
+
+valores = [7, 2, 5, 0, 4]
+dobra(valores)
+print(valores)

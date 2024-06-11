@@ -1,0 +1,40 @@
+As Listas são variáveis compostas e MUTÁVEIS que permitem armazenar vários valores em uma mesma estrutura, acessíveis por chaves individuais.
+                                                   (uma vez definida a lista PODE ser alterada)
+
+lista = ['string', 10, 'outra string', 20]
+lista.append('adicionei uma string') --------->  lista = ['string', 10, 'outra string', 20, 'adicionei uma string']
+lista.insert(0, 'inicio') ------------------------------->  lista = ['inicio', 'string', 10, 'outra string', 20, 'adicionei uma string']
+
+EX.: Deletando elementos de uma lista
+del lista[4]
+lista.pop(4)                                         >>>>   lista = ['inicio', 'string', 10, 20, 'adicionei uma string']
+lista.remove('outra string')
+
+ ________________________________________________________________________________________________________________________________
+
+
+Exemplos do que fazer com uma lista:
+1.	lista = ['hot dog', 'hamburguer', 'suco', 'picolé']
+	if 'pizza' in lanche:
+		lanche.remove('pizza')
+
+2.	valores = list(range(4,11)) -------> valores = [4, 5, 6, 7 ,8, 9, 10]
+
+3.	valores = [8, 2, 5, 4, 9, 3, 0]
+	valores.sort() ------------------------------> valores = [0, 2, 3, 4, 5, 8, 9]
+	valores.sort(reverse=True) ---------> valores = [9, 8, 5, 4, 3, 2, 0]
+
+4.	valores = [8, 2, 5, 4, 9, 3, 0]
+	len(valores) ---------> 7
+
+Listas Compostas:
+
+5.	pessoas = [['Pedro', 25], ['Maria', 19], ['João', 32]]
+	print(pessoas[0][0]) -----------------------------> Pedro
+	print(pessoas[1])----------------------------------> ['Maria', 19]
+_________________________________________________________________________________________________________________________________
+
+
+
+
+

@@ -1,0 +1,14 @@
+Laço de Repetição ou Laço com Variável de Controle
+
+
+for _variável qlqr_ in range(1,10):
+                                       (intervalo)
+
+break  --->  interrompe a repetição
+
+EX.:
+for c in range(0,3)
+     passo
+     pula
+passo
+pega

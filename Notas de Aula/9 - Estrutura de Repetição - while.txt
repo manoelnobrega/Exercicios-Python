@@ -1,0 +1,13 @@
+
+
+while____:            --->  (Executa de forma booleana True ou False)
+   (comando)
+
+
+break        --->  interrompe a repetição
+
+
+EX.:
+while not  maçã:
+    passo
+pega

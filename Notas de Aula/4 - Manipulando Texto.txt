@@ -1,0 +1,49 @@
+frase = 'Cu r  s o     e m    V   í    d   e  o'
+               0 1 2 3 4  5  6 7  8 9 10 11 12 13
+
+
+
+Fatiamentos de String:
+
+frase[9:13]    ---->    Víde
+frase[9:14]    ---->    Vídeo
+frase[0:14:2] ---->    Croe Vdo
+frase[:5] ----------->    Curso
+frase[9:] ----------->    Vídeo
+frase[1::3] -------->    uomío
+
+
+
+
+Análise de String:
+
+len(frase) ------>  exibe o número de caracteres da string
+frase.count('o', 0, 13) ----->  conta o número de vezes que o 'o' aparece
+                                                na string... com o ,0, 13 a função já fatia a string 
+                                                e conta o número de vezes em que o 'o' aparece do caractere 0 ao 13
+frase.find('deo') ----->  conta o número de vezes em que aparece 'deo' na string e a posição em que se encontra
+                                        caso não exista dentro da string o valor retorna como -1
+'Curso' in frase ------>  retorna o valor de True/False
+
+
+
+
+Transformação de String:
+
+frase.replace('Vídeo', 'Casa') ----> substituí 'Vídeo' por 'Casa' dentro da string ---> 'Curso em Casa'
+frase.upper() ----> string fica toda em maiúscula
+frase.lower() ----> string fica toda em minúscula
+frase.capitalize() ----> string fica toda em minúscula, porém o primeiro caractere fica em maiúsculo
+frase.title() --------> o primeiro caractere de cada palavra da string fica em maiúsculo
+frase.strip() ----> remove os espaços inúteis no inicio e no final da string
+frase.rstrip() ------> "right strip" remove os espaços do final da string
+frase.lstring() ----> "left strip" remove os espaços do inicio da string
+
+
+
+Divisão de String:
+
+frase.split()   ------->  cria uma divisão entre os espaços no meio da string e
+                                    por meio disso ele divide a string e à torna uma LISTA
+'-'.join(frase) ------->  junta os elementos de "frase" e usará um hífen como separador entre eles
+

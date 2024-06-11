@@ -1,0 +1,98 @@
+1 - Interactive Help
+2 - docstrings
+3 - Argumentos opcionais
+4 - Escopo de variáveis
+5 - Retorno de resultados
+
+_________________________________________________________________________________________________________
+1.
+	INTERACTIVE HELP
+
+help(função)     -------->   Essa função serve para te indicar para que e como funciona determinada função no python
+print(função.__doc__)
+
+
+OBS.: No Pycharm podemos usar Ctrl+B
+_________________________________________________________________________________________________________
+2.
+	DOCSTRINGS
+
+Docstrings servem para catalogar manuais para a ajuda de funções criadas por você
+EX.:
+def contador(i, f, p):
+    """
+    -> Faz uma contagem e mostra na tela
+    :param i: início da contagem
+    :param f: fim da contagem			>>> """ docstrings """
+    :param p: passo da contagem
+    :return: sem retorno
+    """
+    c = i
+    while c <= f:
+        print(f'{c}', end='..')
+        c += p
+    print('FIM!')
+_________________________________________________________________________________________________________
+3.
+	ARGUMENTOS OPCIONAIS
+
+def somar(a=0, b=0, c=0):	# Atribuindo zero como valor dos parâmetros você torna opcional o preenchimento da função
+    """
+    -> Faz a soma de três valores e mostra o resultado na tela.
+    :param i: primeiro valor
+    :param f: segundo valor
+    :param p: terceiro valor
+    :return: sem retorno
+    """
+    s = a + b + c
+    print(f'A soma vale {s}')
+
+
+somar(2, 3, 4)
+somar(3, 1)
+somar()
+__________________________________________________________________________________________________________
+4.
+	ESCOPO DE VARIÁVEIS
+ 
+def teste(b):
+    a = 8                   # ----> Aqui a variável se encontra no escopo local da função 'teste'
+    b += 4
+    print(f'A dentro vale {a}')
+    print(f'B dentro vale {b}')
+
+
+a = 5    # -----> Aqui a mesma varável se encontra no escopo global do programa
+teste(a)
+print(f'A fora vale {a}')
+
+CORRIGINDO ESSE PROBLEMA:
+
+def teste(b):
+    global a        # -----> Usando 'global' vc indica à função para q ela use a variável 'a' que se encontra no escopo global
+    a = 8
+    b += 4
+    print(f'A dentro vale {a}')
+    print(f'B dentro vale {b}')
+
+
+a = 5
+teste(a)
+print(f'A fora vale {a}')
+_________________________________________________________________________________________________________
+5.
+	RETORNANDO VALORES
+
+return
+
+EX.:
+def somar(a=0, b=0, c=0):
+    s = a + b + c
+    return s
+
+
+r1 = somar(2, 3, 4)
+r2 = somar(1, 7)
+r3 = somar(4)
+print(f'Meus cáluclos deram {r1}, {r2} e {r3}.')
+

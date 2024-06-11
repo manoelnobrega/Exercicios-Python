@@ -1,0 +1,21 @@
+Cores no Terminal
+
+Padrão ANSI: escape sequence
+
+\033[ ¹ ; ² ; ³ m    -------> ¹ = style(estilo da fonte)
+                                     ² = text(cor do texto)
+                                     ³ = back(cor do fundo)
+EX.:
+                             
+            \033[0;33;44m        ---->   style=None;text=Amarelo;back=Azul
+                     ¹    ²    ³
+
+¹STYLE:               ²TEXT:                                ³BACK:
+0 -> None                 30_____Branco_______40
+1 -> Bold                  31____Vermelho______41
+4 -> Underline         32_____Verde________42
+7 -> Negative           33____ Amarelo______ 43
+    (inverte a cor)     34_____Azul_________44
+                                   35_____ Roxo________45
+                                   36____Azul Bebê_____ 46
+                                   37_____Cinza________47

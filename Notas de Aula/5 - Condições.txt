@@ -1,0 +1,29 @@
+Condições:
+
+if   &   else  ---->  estrutura condicional primordial para a Python3
+
+_____________________________________________________________
+
+if carro.esquerda():
+
+bloco TRUE
+
+else:
+
+bloco FALSE
+
+
+EX.:
+
+tempo = int(input('Quantos anos tem seu carro?'))
+if tempo<=3:
+   print('carro novo')
+else:
+   print('carro velho')
+print('--FIM--')
+
+
+CONDIÇÃO SIMPLIFICADA:
+tempo = int(input('Quantos anos tem seu carro?'))
+print('carro novo' if tempo<=3 else 'carro velho')
+print('--FIM--')

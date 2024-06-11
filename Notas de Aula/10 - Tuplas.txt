@@ -1,0 +1,7 @@
+As Tuplas são variáveis compostas e IMUTÁVEIS que permitem armazenar vários valores em uma mesma estrutura, acessíveis por chaves individuais.
+                                                   (uma vez definida a tupla n pode ser alterada)
+
+tupla = ('string', 10, 'outra string', 20)
+
+del(tupla) ---------> Deleta a tupla
+

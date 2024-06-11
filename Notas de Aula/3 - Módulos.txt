@@ -1,0 +1,18 @@
+Módulos são bibliotecas com funções à serem usadas em Python
+
+import  modulo  ::  importa um módulo específico para o seu script
+from modulo import ___  :: importa uma função específica de um certo modulo para o seu script
+
+EX.: Modulo: math
+
+math
+    ceil (arredondamento para cima)
+    floor (arredondamento para baixo)
+    trunc (retira a vírgula sem arredondar "trunca o numero")
+    pow (eleva ao quadrado)
+    sqrt (tira a raiz quadrada)
+    factorial (calcula o fatorial do número)
+ 
+
+Modulo: datetime
+    date.today().year ---> pega o ano atual / o mês atual (.month) / o dia atual (.day)
